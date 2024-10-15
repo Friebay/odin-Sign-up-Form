@@ -5,37 +5,55 @@
   <title>Create account</title>
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <meta name="description" content="" />
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+
+  <!-- External CSS -->
   <link rel="stylesheet" type="text/css" href="style.css" />
   <link rel="icon" href="favicon.png">
 </head>
 <body>
-    <div>
-        <p>Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text. Text Text Text.<br>
-            Text Text Text Text.</p>
+  <div class="container">
+    <div class="left-section">
+      <div class="overlay">
+        <img src="rocket.svg" alt="ODIN Logo">
+        <h1>ODIN</h1>
+      </div>
     </div>
-    <div>
+
+    <div class="right-section">
+      <div class="text-box">
+        <p>Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text. Text Text Text.<br>
+          Text Text Text Text.</p>
+      </div>
+
+      <div class="form-box">
         <p>Let's do this!</p>
         <form>
-            <label for="fname">FIRST NAME:</label><br>
-            <input type="text" id="fname" name="fname"><br>
-            <label for="lname">LAST NAME:</label><br>
-            <input type="text" id="lname" name="lname"><br>
-            <label for="lname">EMAIL:</label><br>
-            <input type="text" id="lname" name="lname"><br>
-            <label for="lname">PHONE NUMBER:</label><br>
-            <input type="text" id="lname" name="lname"><br>
-            <label for="lname">PASSWORD:</label><br>
-            <input type="text" id="lname" name="lname"><br>
-            <label for="lname">CONFIRM PASSWORD:</label><br>
-            <input type="text" id="lname" name="lname"><br>
+          <label for="fname">FIRST NAME:</label><br>
+          <input type="text" id="fname" name="fname"><br>
+          <label for="lname">LAST NAME:</label><br>
+          <input type="text" id="lname" name="lname"><br>
+          <label for="email">EMAIL:</label><br>
+          <input type="text" id="email" name="email"><br>
+          <label for="phone">PHONE NUMBER:</label><br>
+          <input type="text" id="phone" name="phone"><br>
+          <label for="password">PASSWORD:</label><br>
+          <input type="text" id="password" name="password"><br>
+          <label for="confirm_password">CONFIRM PASSWORD:</label><br>
+          <input type="text" id="confirm_password" name="confirm_password"><br>
         </form>
-    </div>
-    <div>
+      </div>
+
+      <div class="submit-box">
         <form>
-            <input type="submit" value="Submit">
-            <p>Already have an account? <a href="">Log in</a></p>
+          <input type="submit" value="Submit">
+          <p>Already have an account? <a href="">Log in</a></p>
         </form>
+      </div>
     </div>
+  </div>
   
   <script src="app.js"></script>
 </body>
