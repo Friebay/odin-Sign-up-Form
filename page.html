@@ -4,12 +4,10 @@
   <meta charset="UTF-8" />
   <title>Create account</title>
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <meta name="description" content="" />
+  <meta name="description" content="">
 
-  <!-- Google Font -->
   <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
 
-  <!-- External CSS -->
   <link rel="stylesheet" type="text/css" href="style.css" />
   <link rel="icon" href="favicon.png">
 </head>
@@ -24,31 +22,44 @@
 
     <div class="right-section">
       <div class="text-box">
-        <p>Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text. Text Text Text.<br>
-          Text Text Text Text.</p>
+        <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. <i>Sign up</i> now to get started.<br><br>
+          You know you want to.</p>
       </div>
 
       <div class="form-box">
-        <p>Let's do this!</p>
-        <form>
-          <label for="fname">FIRST NAME:</label><br>
-          <input type="text" id="fname" name="fname"><br>
-          <label for="lname">LAST NAME:</label><br>
-          <input type="text" id="lname" name="lname"><br>
-          <label for="email">EMAIL:</label><br>
-          <input type="text" id="email" name="email"><br>
-          <label for="phone">PHONE NUMBER:</label><br>
-          <input type="text" id="phone" name="phone"><br>
-          <label for="password">PASSWORD:</label><br>
-          <input type="text" id="password" name="password"><br>
-          <label for="confirm_password">CONFIRM PASSWORD:</label><br>
-          <input type="text" id="confirm_password" name="confirm_password"><br>
+        <p class="big-title">Let's do this!</p>
+        <form class="form-grid">
+          <div class="form-group">
+            <label for="fname">First Name:</label>
+            <input type="text" id="fname" name="fname" placeholder="Enter your first name" required>
+          </div>
+          <div class="form-group">
+            <label for="lname">Last Name:</label>
+            <input type="text" id="lname" name="lname" placeholder="Enter your last name" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+          </div>
+          <div class="form-group">
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required minlength="8" placeholder="Enter a strong password">
+            <small>Password must be at least 8 characters long and include uppercase, lowercase, and digits.</small>
+          </div>
+          <div class="form-group">
+            <label for="confirm_password">Confirm Password:</label>
+            <input type="password" id="confirm_password" name="confirm_password" required minlength="8" placeholder="Confirm your password">
+          </div>
         </form>
       </div>
 
       <div class="submit-box">
         <form>
-          <input type="submit" value="Submit">
+          <input type="submit" value="Create an account">
           <p>Already have an account? <a href="">Log in</a></p>
         </form>
       </div>

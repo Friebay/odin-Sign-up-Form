@@ -1,91 +1,120 @@
 body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-  }
-  
-  .container {
-    display: flex;
-    height: 100vh;
-  }
-  
-  /* Left section with background image, logo, and name */
-  .left-section {
-    width: 40%;
-    background-image: url('background.webp');
-    background-size: cover;
-    background-position: center;
-    position: relative;
-  }
-  
-  .overlay {
-    position: absolute;
-    top: 20%;
-    left: 0;
-    width: 100%;
-    height: 100px;
-    background-color: rgba(0, 0, 0, 0.5);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .overlay img {
-    height: 60px;
-    margin-right: 10px;
-  }
-  
-  .overlay h1 {
-    font-family: 'Lobster', cursive;
-    font-size: 36px;
-    color: white;
-  }
-  
-  /* Right section with forms */
-  .right-section {
-    width: 60%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 20px;
-  }
-  
-  .text-box, .form-box, .submit-box {
-    margin-bottom: 20px;
-    padding: 20px;
-  }
-  
-  .text-box {
-    background-color: gray;
-    color: white;
-  }
-  
-  .form-box {
-    background-color: white;
-  }
-  
-  .form-box input[type="text"] {
-    width: 100%;
-    padding: 10px;
-    margin: 10px 0;
-    border: 1px solid #ccc;
-  }
-  
-  .submit-box {
-    background-color: gray;
-    color: white;
-    text-align: center;
-  }
-  
-  .submit-box input[type="submit"] {
-    padding: 10px 20px;
-    border: none;
-    background-color: white;
-    color: gray;
-    cursor: pointer;
-  }
-  
-  .submit-box a {
-    color: white;
-    text-decoration: none;
-  }
-  
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+}
+
+.left-section {
+  width: 40%;
+  background-image: url('background.webp');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  top: 20%;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.overlay img {
+  height: 60px;
+  margin-right: 10px;
+}
+
+.overlay h1 {
+  font-family: 'Lobster', cursive;
+  font-size: 36px;
+  color: white;
+}
+
+.right-section {
+  width: 60%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: white;
+}
+
+.text-box {
+  background-color: #fafafa;
+  color: black;
+  font-size: 18px;
+  padding: 20px;
+}
+
+.form-box {
+  background-color: white;
+  padding: 20px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 20px;
+  row-gap: 20px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.form-group input:focus {
+  border: 2px solid blue;
+  box-shadow: 0px 0px 5px rgba(0, 0, 255, 0.5);
+}
+
+.submit-box input[type="submit"] {
+  padding: 15px 30px;
+  background-color: #28a745;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.submit-box p {
+  color: black;
+}
+
+.submit-box a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+/* Invalid password input for type="password" */
+input[type="password"]:invalid {
+  border: 2px solid red; /* Red border for invalid inputs */
+}
+
+/* Keep the focus styling */
+input[type="password"]:focus {
+  border: 2px solid blue;
+  box-shadow: 0px 0px 5px rgba(0, 0, 255, 0.5);
+}
+
